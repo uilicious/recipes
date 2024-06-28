@@ -1,6 +1,6 @@
-# Login to Github with valid username and email
+# Login to Github with valid username and password
 
-This test case should validate that a user should be able to login to github with a valid username and email, and see the "Dashboard".
+This test case should validate that a user should be able to login to github with a valid username and password, and see the "Dashboard".
 
 ## Test Steps
 
