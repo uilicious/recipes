@@ -1,0 +1,31 @@
+# Validate that the item has been added to cart successfully
+
+This test case should validate that the item added to cart has been successfully added to cart
+
+## Test Steps
+
+These are the steps to perform to validate the test case:
+
+1. Navigate to powermac's website
+2. Search for an item
+3. Add searched item to cart
+4. Validate that the item is in the cart
+
+## Test Script
+
+This test automation script validates the test case using the UI-licious Test Framework:
+```javascript
+// 🌐 Lets load up the website
+I.goTo("https://powermaccenter.com/")
+I.fill("Search", "iPhone 15 Pro Max 1TB Black Titanium")
+I.pressEnter()
+I.click("iPhone 15 Pro Max 1TB Black Titanium")
+I.wait(3)
+// to validate availability of stocks
+I.click("Add to Cart")
+
+UI.context("#cart-notification", ()=>{
+	I.see("Item added to your cart")
+	I.see("iPhone 15 Pro Max")
+})
+```
