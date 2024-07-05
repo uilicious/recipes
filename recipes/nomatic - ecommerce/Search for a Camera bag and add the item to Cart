@@ -1,4 +1,4 @@
-# Search for a Camera bag in Nomatic and add it to the Shopping Cart
+# Validate that product is added to cart successfully
 
 This test case validates that when a user searches for an item and adds it to the cart, the item name should appear in the Cart.
 
