@@ -76,8 +76,8 @@ UI.context("iframe[title='Field container for: Security code']", ()=>{
 	I.fill("Security Code", <CVV Code>)
 })
 I.click("Pay Now")
+I.wait(10)
 
 //Check for errors
-I.wait(10)
 I.see("Card was declined")
 ```
