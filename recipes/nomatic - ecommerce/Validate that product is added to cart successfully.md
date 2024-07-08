@@ -19,10 +19,16 @@ This test automation script validates the test case using the UI-licious Test Fr
 ```javascript
 I.goTo("https://www.nomatic.com/collections/all-backpacks-bags")
 I.click("Shop your country")
+
+// Fill in search
 I.click("icon-search")
 I.fill("Search", "Camera Bag")
-I.pressEnter()
+I.pressEnter() // Press "Enter" to submit search
+
+// Check that product appearts in search reasult
 I.see("Mckinnon Camera Pack 25L")
+
+// View product and add to cart
 I.click("Mckinnon Camera Pack 25L")
 I.click("Add to Cart")
 
