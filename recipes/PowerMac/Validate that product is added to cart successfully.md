@@ -1,15 +1,18 @@
-# Validate that the item has been added to cart successfully
+# Validate that product is added to cart successfully
 
-This test case should validate that the item added to cart has been successfully added to cart
+This test case validates that when a user searches for an item and adds it to the cart, the item name should appear in the Cart.
 
 ## Test Steps
 
 These are the steps to perform to validate the test case:
 
-1. Navigate to powermac's website
-2. Search for an item
-3. Add searched item to cart
-4. Validate that the item is in the cart
+1. Navigate to Powermac's website
+2. Click "Search"
+3. Fill in "iPhone 15"
+4. Press "Enter"
+5. Click on the product
+6. Click "Add to Cart"
+7. Validate if the Item has been successfully added to cart
 
 ## Test Script
 
@@ -26,6 +29,6 @@ I.click("Add to Cart")
 
 UI.context("#cart-notification", ()=>{
 	I.see("Item added to your cart")
-	I.see("iPhone 15 Pro Max")
+	I.see("iPhone 15 Pro Max 1TB Black Titanium")
 })
 ```

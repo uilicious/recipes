@@ -25,6 +25,7 @@ I.see("//iframe[@title='Auth']")
 
 // Use UI.context to switch into the iframe
 UI.context("//iframe[@title='Auth']", ()=>{
+	// Fill in the required forms
 	I.fill("Email", "<email>")
 	I.fill("Password", "<password>")
 	I.click("Create account")
