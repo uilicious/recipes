@@ -14,7 +14,7 @@ These are the steps to perform to validate the test case:
 6. Click on a size
 7. Validate if the Item has been successfully added to cart
 8. Click on the "Decrement" icon
-9. Validate if the item has been successfully removed to card and the message "Your cart is empty" is appearing
+9. Validate if the item has been successfully removed to cart and the message "Your cart is empty" is appearing
 
 ## Test Script
 

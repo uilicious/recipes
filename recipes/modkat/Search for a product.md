@@ -6,10 +6,9 @@ This test case validates that when a user searches for a product that exists, th
 
 These are the steps to perform to validate the test case:
 
-1. Navigate to Nomatic's website
-2. Click "Search"
-3. Fill in "Camera Bag" in the search box
-4. Validate that relavant products are shown
+1. Navigate to Modkat's website
+2. Fill in Search bar with "Modkat XL"
+3. Validate that relavant products are shown
 
 ```javascript
 //Navigate to website
