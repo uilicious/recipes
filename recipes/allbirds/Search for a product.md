@@ -6,9 +6,9 @@ This test case validates that when a user searches for a product that exists, th
 
 These are the steps to perform to validate the test case:
 
-1. Navigate to Blizzard's website
+1. Navigate to allbird's website
 2. Click "Search"
-3. Fill in "Starcraft" in the search box
+3. Fill in "Shoes" in the search box
 4. Validate that relavant products are shown
 
 ## Test Script
@@ -16,23 +16,18 @@ These are the steps to perform to validate the test case:
 This test automation script validates the test case using the UI-licious Test Framework:
 ```javascript
 //Navigate to website
-I.goTo("https://uk.gear.blizzard.com/")
+I.goTo("https://www.allbirds.com/")
+
+//Choose shipping country
+I.click("US")
 
 //Wait for page to load
 I.wait(5)
-
-//Close promo dialog
-UI.context(".needsclick", ()=>{
-	I.click("Close")
-})
 
 //Search for an item
-I.fill("Search", "StarCraft")
-I.pressEnter()
+I.click("Search")
+I.fill("Search", "Shoes")
 
-//Wait for page to load
-I.wait(5)
-
-//Validate that a relevant item appears
-I.see("StarCraft Black Flatbill Snapback Hat")
+//Check for relevant item
+I.see("Men's Tree Runners")
 ```

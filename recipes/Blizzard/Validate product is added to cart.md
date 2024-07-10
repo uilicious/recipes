@@ -6,10 +6,10 @@ This test case validates that when a user searches for an item and adds it to th
 
 These are the steps to perform to validate the test case:
 
-1. Navigate to Nomatic's website
+1. Navigate to Blizzard's website
 2. Click "Search"
-3. Fill in "Camera Bag"
-4. Click on the name of the camera bag
+3. Fill in "Starcraft"
+4. Click on an item
 5. Click Add to Cart
 6. Validate if the Item has been successfully added to cart
 

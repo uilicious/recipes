@@ -6,7 +6,7 @@ This test case should validate that an error is shown when the user enters an in
 
 This are the steps to perform to validate the test case:
 
-1. Navigate to website
+1. Navigate to allbird's website
 2. Add a product to cart
 3. Proceed to checkout page
 4. Fill in shipping information with valid information
