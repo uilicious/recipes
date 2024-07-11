@@ -46,4 +46,11 @@ I.click("Add to cart")
 UI.context("#dropdown-cart", ()=>{
 	I.see("StarCraft Black Flatbill Snapback Hat")
 })
+
+UI.context("#dropdown-cart", ()=>{
+	//Initialization of values
+	var expected_quantity = "1"
+	var actual_quantity = I.getValue("#item-quantity")
+	TEST.assert(expected_quantity === actual_quantity, `Expected quantity is ${expected_quantity}, got ${actual_quantity}`)
+})
 ```
